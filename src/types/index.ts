@@ -6,7 +6,7 @@ export enum complexity {
 }
 
 export type RunResults = {
-    alghorytim: string
+    Algorithm: string
     duration: number
     complexity: complexity
 }

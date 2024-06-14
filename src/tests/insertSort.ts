@@ -1,6 +1,6 @@
 import { insertionSort } from "@/operations/insertionSort";
-import { randonArray } from "@/constants/randonArray";
+import { randomArray } from "@/constants/randomArray";
 
 export function testInsertSort() {   
-    return insertionSort(randonArray)
+    return insertionSort(randomArray)
 }

@@ -1,6 +1,6 @@
 import { selectionSort } from "@/operations/selectionSort";
-import { randonArray } from "@/constants/randonArray";
+import { randomArray } from "@/constants/randomArray";
 
 export function testSelectionSort() {   
-    return selectionSort(randonArray)
+    return selectionSort(randomArray)
 }

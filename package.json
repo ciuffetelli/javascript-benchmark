@@ -1,9 +1,9 @@
 {
   "name": "javascript-benchmark",
   "version": "1.0.0",
-  "description": "Test your javascript development enviroment",
+  "description": "Test your javascript development environment",
   "scripts": {
-    "start": "npx ts-node -r tsconfig-paths/register /src/index.ts",
+    "start": "npx ts-node -r tsconfig-paths/register ./src/index.ts",
     "dev": "npx ts-node-dev -r tsconfig-paths/register --respawn src/index.ts",
     "test": "jest --watchAll"
   },
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ciuffetelli/javascript-benchmark#readme",
   "dependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
   "types": "/types.d.ts",
@@ -31,5 +32,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.1.3",
     "tsconfig-paths": "^4.2.0"
+  },
+  "engines": {
+    "node": "^20"
   }
 }

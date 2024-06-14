@@ -1,4 +1,4 @@
-export const randonArray = [
+export const randomArray = [
     1571573601,
     5738628201,
     8930166205,

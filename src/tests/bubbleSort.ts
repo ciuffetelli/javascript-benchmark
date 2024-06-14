@@ -1,6 +1,6 @@
 import { bubbleSort } from "@/operations/bubbleSort";
-import { randonArray } from "@/constants/randonArray";
+import { randomArray } from "@/constants/randomArray";
 
 export function testBubbleSort() {   
-    return bubbleSort(randonArray)
+    return bubbleSort(randomArray)
 }

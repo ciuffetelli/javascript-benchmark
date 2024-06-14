@@ -1,14 +1,17 @@
 import { runBubbleSort } from "./runs/bubbleSort";
 import { runInsertSort } from "./runs/insertSort";
+import { runJavascriptSort } from "./runs/javascriptSort";
 import { runSelectionSort } from "./runs/selectionSort";
 
 const result = [];
 
+// SORT
+result.push(runJavascriptSort());
 result.push(runBubbleSort());
 result.push(runSelectionSort());
 result.push(runInsertSort());
 
-(async () => {
+export default (async () => {  
 
     const solution = await Promise.all(result);
     const duration = solution.reduce((acc, item) => {
@@ -20,6 +23,6 @@ result.push(runInsertSort());
             s: duration/1000,
             ms: duration,
         },
-        resume: solution
+        summaries: solution
     });
 })()
